@@ -36,10 +36,35 @@ public class MainActivity extends AppCompatActivity {
                 String selectedItem = (String) adapterView.getItemAtPosition(i);
                 Log.i(selectedItem, "akal");
                 if(selectedItem.equals("        Game ")){
+                    String URRL="http://www.lau.edu.lb";
                     Intent obj = new Intent(getApplicationContext(), Web.class);
+                    obj.putExtra("GameUrl", URRL);
                     startActivity(obj);
                 }
-
+                if(selectedItem.equals("        MobileComputing ")){
+                    String URRL="http://www.lau.edu.lb";
+                    Intent obj = new Intent(getApplicationContext(), Web.class);
+                    obj.putExtra("GameUrl", URRL);
+                    startActivity(obj);
+                }
+                if(selectedItem.equals("        NLP ")){
+                    String URRL="http://www.lau.edu.lb";
+                    Intent obj = new Intent(getApplicationContext(), Web.class);
+                    obj.putExtra("GameUrl", URRL);
+                    startActivity(obj);
+                }
+                if(selectedItem.equals("        Actuarial Mathematics ")){
+                    String URRL="http://www.lau.edu.lb";
+                    Intent obj = new Intent(getApplicationContext(), Web.class);
+                    obj.putExtra("GameUrl", URRL);
+                    startActivity(obj);
+                }
+                if(selectedItem.equals("        Discrete II ")){
+                    String URRL="http://www.lau.edu.lb";
+                    Intent obj = new Intent(getApplicationContext(), Web.class);
+                    obj.putExtra("GameUrl", URRL);
+                    startActivity(obj);
+                }
             }
         });
 

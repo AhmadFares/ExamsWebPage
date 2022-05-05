@@ -2,8 +2,10 @@ package com.example.exams;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 public class Web extends AppCompatActivity {
 
@@ -12,9 +14,13 @@ public class Web extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_web);
 
-        WebView view = (WebView) findViewById(R.id.webview);
+
+        Intent x = getIntent();
+        String URRL = x.getStringExtra("GameUrl");
+
+        WebView view = (WebView) findViewById(R.id.webv);
         view.getSettings().setJavaScriptEnabled(true);
         view.setWebViewClient( new WebViewClient());
-        //view.loadUrl("http://www.lau.edu.lb");
+        view.loadUrl(URRL);
     }
 }
