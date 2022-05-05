@@ -71,7 +71,6 @@ public class MainActivity extends AppCompatActivity {
 
         try{
 
-
             SQLiteDatabase sql = this.openOrCreateDatabase("Exams", MODE_PRIVATE, null);
             sql.execSQL("CREATE Table IF NOT EXISTS exams (name VARCHAR)");
 //        sql.execSQL("INSERT INTO exams(name) VALUES ('MobileComputing')");
